@@ -240,17 +240,36 @@ body.light .theme-toggle {
   box-shadow: 0 0 15px #ff6b00;
 }
 
-footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
+.media {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  margin: 2rem 0;
 }
 
-footer p {
-    color: white;
-    text-align: center;
+.media iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+  transition: 0.4s;
+}
+.media iframe:hover {
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.7);
+  transform: translateY(-5px);
+}
+
+footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+footer p {       
+  color: #fff;
 }
 @media (max-width: 600px) {
   body {
